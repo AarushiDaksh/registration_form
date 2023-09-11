@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Regisration Form </title>
+ </head>
+<body>
+  <form action="mailto:aarushi312004@gmail.com" method="post">
+    <div class="container">
+      <header><h1>Registration Form</h1></header>
+      <div class="personal">
+        <fieldset>
+        <legend>personal information</legend>
+        <div class="input-field">
+          <label>Full Name:</label>
+          <input type="text" placeholder="Enter your first Name" required>
+          <input type="text" placeholder="Enter your last Name" required>
+        </div>
+
+        <div class="input-field">
+          <label>Date of Birth:</label>
+          <input type="date" placeholder="Enter birth date" required>
+        </div>
+
+        <div class="input-field">
+            <label>Email:</label>
+            <input type="text" placeholder="Enter your email" required>
+        </div>
+
+        <div class="input-field">
+            <label>Mobile Number:</label>
+            <input type="tel" placeholder="Enter mobile number" required>
+        </div>
+
+        <div class="input-field">
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="Male" id="gender-m" ><label for="gender-m">Male</label>
+            <input type="radio" name="gender" values="Female" id="gender-f"><label for="gender-f">Female</label>
+            <input type="radio" name="gender" values="Other" id="gender-o"><label for="gender-o">Others</label>
+        </div>
+      </fieldset>
+      <br>
+        <fieldset>
+        <legend>Event section</legend>
+        <div class="input-field">
+          <label>Event type</label>
+          <select required>
+              <option disabled selected>Select Event</option>
+              <option>Event-A</option>
+              <option>Event-B</option>
+              <option>Event-c</option>
+          </select>
+        </div>
+        <div class="input-field">
+          <label>Number of Tickets:</label>
+          <input type="number" placeholder="Enter Tickets number" required>
+        </div>
+        <div class="input-field">
+          <label>Preferences:</label>
+          <input type="checkbox" name="Meal" id="meal"><label for="meal">Meal</label>
+          <input type="checkbox" name="Seat" id="seat"><label for="seat">Seat</label>
+        </div>
+      </fieldset>
+      <br>
+        <fieldset>
+        <legend>Address section</legend> 
+        <div class="input-field">
+          <label>City Address</label>
+          <input type="text" placeholder="Enter your City " required>
+        </div>
+        <div class="input-field">
+          <label>State</label>
+          <select required>
+            <option disabled selected>Select state</option>
+            <option>Uttar pardesh</option>
+            <option>Delhi</option>
+            <option>Punjab</option>
+        </select>
+        </div>
+        <div class="input-field">
+          <label>Zip code</label>
+          <input type="tel" placeholder="Enter Zip code " required>
+        </div>
+      </fieldset>
+      <br>
+
+        <fieldset>
+          <legend>Feedback</legend>
+          <label for="hear_about">How did you hear about us?</label>
+          <select id="hear_about" name="hear_about">
+            <option value="social_media">Social Media</option>
+            <option value="friend">Friend/Family</option>
+            <option value="website">Website</option>
+            <option value="other">Other</option>
+          </select><br>
+          
+          <label for="comments">Comments or Questions:</label>
+          <textarea id="comments" name="comments" rows="4"></textarea><br>
+        </fieldset>
+        <br>
+        <fieldset>
+        <legend>Confirmation</legend>
+        <div class="button" >
+            <button>
+              <input type="submit" name="Submit" value="submit">
+            </button>
+            <button>
+              <input type="reset" value="Reset">
+            </button>
+        </div>
+        </fieldset>
+      </div> 
+            
+    </div>
+
+  </form>
+</body>
+</html>
